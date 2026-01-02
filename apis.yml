@@ -7,9 +7,9 @@ apis:
     tags:
       - OpenAPI
       - Toolkit
-    humanURL: ' https://speclynx.com/'
+    humanURL: https://speclynx.com/
     properties:
-      - url: ' https://speclynx.com/'
+      - url: https://speclynx.com/
         type: Documentation
     description: >-
       Stop wrestling with OpenAPI specs — SpecLynx OpenAPI Toolkit delivers the
