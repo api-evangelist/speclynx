@@ -12,10 +12,9 @@ apis:
       - url: https://speclynx.com/
         type: Documentation
     description: >-
-      Stop wrestling with OpenAPI specs — SpecLynx OpenAPI Toolkit delivers the
-      most effective way to author and manage your API specs, bringing
-      unprecedented ease, pinpoint accuracy, and unmatched power directly to
-      your VSCode workflow. 
+      Stop wrestling with OpenAPI specs — SpecLynx OpenAPI Toolkit delivers the most
+      effective way to author and manage your API specs, bringing unprecedented ease,
+      pinpoint accuracy, and unmatched power directly to your VSCode workflow.
 name: SpecLynx
 tags:
   - OpenAPI
@@ -27,10 +26,9 @@ created: '2026-01-02'
 modified: '2026-03-16'
 position: Consumer
 description: >-
-  Stop wrestling with OpenAPI specs — SpecLynx OpenAPI Toolkit delivers the most
-  effective way to author and manage your API specs, bringing unprecedented
-  ease, pinpoint accuracy, and unmatched power directly to your VSCode
-  workflow. 
+  Stop wrestling with OpenAPI specs — SpecLynx OpenAPI Toolkit delivers the most effective
+  way to author and manage your API specs, bringing unprecedented ease, pinpoint accuracy,
+  and unmatched power directly to your VSCode workflow.
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
