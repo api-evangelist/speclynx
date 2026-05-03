@@ -1,0 +1,52 @@
+{
+  "title": "SpecLynx Validation Results Example",
+  "description": "Example diagnostic results from SpecLynx validating an OpenAPI 3.1 specification",
+  "specificationFormat": "openapi-3.1",
+  "specificationFile": "my-api-openapi.yml",
+  "results": [
+    {
+      "severity": "error",
+      "message": "Missing required field 'operationId' in GET /users operation",
+      "code": "oas-operation-operationId",
+      "source": "json-schema",
+      "range": {
+        "start": {"line": 45, "character": 4},
+        "end": {"line": 45, "character": 7}
+      },
+      "path": ["paths", "/users", "get"]
+    },
+    {
+      "severity": "warning",
+      "message": "Operation summary should not end with a period",
+      "code": "operation-summary-period",
+      "source": "spectral",
+      "range": {
+        "start": {"line": 47, "character": 4},
+        "end": {"line": 47, "character": 40}
+      },
+      "path": ["paths", "/users", "get", "summary"]
+    },
+    {
+      "severity": "warning",
+      "message": "Duplicate operationId 'getUser' found in paths /users/{id} and /user/{id}",
+      "code": "duplicate-operationId",
+      "source": "semantic-validation",
+      "range": {
+        "start": {"line": 82, "character": 4},
+        "end": {"line": 82, "character": 30}
+      },
+      "path": ["paths", "/user/{id}", "get", "operationId"]
+    },
+    {
+      "severity": "information",
+      "message": "Consider adding a 429 rate limit response to this operation",
+      "code": "operation-missing-rate-limit-response",
+      "source": "semantic-linting",
+      "range": {
+        "start": {"line": 60, "character": 4},
+        "end": {"line": 60, "character": 13}
+      },
+      "path": ["paths", "/users", "post", "responses"]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/speclynx/main/json-schema/speclynx-validation-result-schema.json",
+  "title": "SpecLynx Validation Result",
+  "description": "Schema for a diagnostic result produced by SpecLynx validation of an API specification",
+  "type": "object",
+  "properties": {
+    "severity": {
+      "type": "string",
+      "enum": ["error", "warning", "information", "hint"],
+      "description": "The severity level of the diagnostic message"
+    },
+    "message": {
+      "type": "string",
+      "description": "Human-readable diagnostic message describing the issue"
+    },
+    "code": {
+      "type": "string",
+      "description": "Machine-readable code identifying the rule or validation that fired"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["json-schema", "spectral", "semantic-validation", "semantic-linting"],
+      "description": "The validation source that produced this diagnostic"
+    },
+    "range": {
+      "type": "object",
+      "description": "Location in the specification document where the issue was found",
+      "properties": {
+        "start": {
+          "type": "object",
+          "properties": {
+            "line": {"type": "integer", "minimum": 0},
+            "character": {"type": "integer", "minimum": 0}
+          },
+          "required": ["line", "character"]
+        },
+        "end": {
+          "type": "object",
+          "properties": {
+            "line": {"type": "integer", "minimum": 0},
+            "character": {"type": "integer", "minimum": 0}
+          },
+          "required": ["line", "character"]
+        }
+      },
+      "required": ["start", "end"]
+    },
+    "path": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "JSON path to the location in the spec that triggered the diagnostic"
+    },
+    "specificationFormat": {
+      "type": "string",
+      "enum": ["openapi-2", "openapi-3.0", "openapi-3.1", "asyncapi-2", "arazzo-1"],
+      "description": "The specification format that was validated"
+    }
+  },
+  "required": ["severity", "message", "source"]
+}

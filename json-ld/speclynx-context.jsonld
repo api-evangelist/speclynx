@@ -1,0 +1,57 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "speclynx": "https://speclynx.com/vocab/",
+    "lsp": "https://microsoft.github.io/language-server-protocol/vocab/",
+    "name": "name",
+    "description": "description",
+    "url": "url",
+    "SoftwareApplication": "SoftwareApplication",
+    "SoftwareSourceCode": "SoftwareSourceCode",
+    "OpenAPIToolkit": {
+      "@id": "speclynx:OpenAPIToolkit",
+      "@type": "@id"
+    },
+    "LanguageService": {
+      "@id": "speclynx:LanguageService",
+      "@type": "@id"
+    },
+    "ApiDOM": {
+      "@id": "speclynx:ApiDOM",
+      "@type": "@id"
+    },
+    "ValidationResult": {
+      "@id": "speclynx:ValidationResult",
+      "@type": "@id"
+    },
+    "CompletionItem": {
+      "@id": "lsp:CompletionItem",
+      "@type": "@id"
+    },
+    "severity": {
+      "@id": "speclynx:severity",
+      "@type": "xsd:string"
+    },
+    "specificationFormat": {
+      "@id": "speclynx:specificationFormat",
+      "@type": "xsd:string"
+    },
+    "diagnosticCode": {
+      "@id": "speclynx:diagnosticCode",
+      "@type": "xsd:string"
+    },
+    "validationSource": {
+      "@id": "speclynx:validationSource",
+      "@type": "xsd:string"
+    },
+    "insertText": {
+      "@id": "lsp:insertText",
+      "@type": "xsd:string"
+    },
+    "range": {
+      "@id": "lsp:Range",
+      "@type": "@id"
+    },
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }
+}

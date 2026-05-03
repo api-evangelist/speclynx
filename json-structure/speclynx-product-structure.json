@@ -1,0 +1,53 @@
+{
+  "name": "SpecLynx Product Ecosystem",
+  "description": "Structure of the SpecLynx product suite and how the components relate to each other",
+  "type": "ecosystem",
+  "products": [
+    {
+      "name": "SpecLynx OpenAPI Toolkit",
+      "type": "VS Code Extension",
+      "id": "SpecLynx.vscode-openapi-toolkit",
+      "powers": ["Semantic Editing", "Validation", "Live Preview", "Navigation"],
+      "builtOn": ["ApiDOM", "Language Service"],
+      "url": "https://speclynx.com/openapi-toolkit/"
+    },
+    {
+      "name": "SpecLynx Editor",
+      "type": "Browser-Based Tool",
+      "id": "editor.speclynx.com",
+      "powers": ["Online Editing", "Real-Time Validation", "Live Preview"],
+      "builtOn": ["ApiDOM", "Language Service"],
+      "url": "https://speclynx.com/editor/"
+    },
+    {
+      "name": "SpecLynx CLI",
+      "type": "Command-Line Interface",
+      "id": "speclynx-cli",
+      "powers": ["Overlay Operations", "Dereferencing", "Bundling", "Conversion", "Validation"],
+      "builtOn": ["ApiDOM"],
+      "url": "https://speclynx.com/"
+    },
+    {
+      "name": "SpecLynx Language Service",
+      "type": "npm Library",
+      "id": "@speclynx/apidom-ls",
+      "powers": ["Validation", "Completion", "Hover Documentation", "Go to Definition", "Find References", "Semantic Tokens", "Formatting", "Dereferencing", "Format Conversion"],
+      "builtOn": ["ApiDOM"],
+      "url": "https://speclynx.com/language-service/"
+    },
+    {
+      "name": "SpecLynx ApiDOM",
+      "type": "Parsing Engine",
+      "id": "apidom",
+      "powers": ["Semantic Parsing", "Lossless Parsing", "Error Recovery", "Isomorphic Runtime"],
+      "builtOn": ["Tree-sitter"],
+      "url": "https://speclynx.com/apidom/"
+    }
+  ],
+  "supportedFormats": [
+    {"format": "OpenAPI", "versions": ["2.0", "3.0.x", "3.1.x"]},
+    {"format": "AsyncAPI", "versions": ["2.x"]},
+    {"format": "Arazzo", "versions": ["1.x"]},
+    {"format": "JSON Schema", "versions": ["Draft 4/5", "Draft 6", "Draft 7", "2019-09", "2020-12"]}
+  ]
+}

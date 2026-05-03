@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/speclynx/main/json-schema/speclynx-completion-item-schema.json",
+  "title": "SpecLynx Completion Item",
+  "description": "Schema for an autocompletion suggestion provided by the SpecLynx Language Service",
+  "type": "object",
+  "properties": {
+    "label": {
+      "type": "string",
+      "description": "The text shown in the completion list"
+    },
+    "kind": {
+      "type": "integer",
+      "description": "LSP completion item kind (e.g., 1=Text, 5=Field, 6=Variable, 9=Module)"
+    },
+    "detail": {
+      "type": "string",
+      "description": "Additional detail shown alongside the completion label (e.g., type information)"
+    },
+    "documentation": {
+      "type": "object",
+      "properties": {
+        "kind": {"type": "string", "enum": ["plaintext", "markdown"]},
+        "value": {"type": "string"}
+      },
+      "description": "Documentation shown in a hover panel when the completion is selected"
+    },
+    "insertText": {
+      "type": "string",
+      "description": "The actual text inserted when the completion is accepted"
+    },
+    "insertTextFormat": {
+      "type": "integer",
+      "enum": [1, 2],
+      "description": "Format of insertText: 1=PlainText, 2=Snippet"
+    },
+    "filterText": {
+      "type": "string",
+      "description": "Text used for filtering the completion list"
+    },
+    "sortText": {
+      "type": "string",
+      "description": "Text used for sorting completions in the list"
+    },
+    "deprecated": {
+      "type": "boolean",
+      "description": "Whether this completion item is deprecated"
+    }
+  },
+  "required": ["label"]
+}

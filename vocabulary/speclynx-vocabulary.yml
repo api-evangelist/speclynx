@@ -1,0 +1,163 @@
+name: SpecLynx Vocabulary
+description: >-
+  Domain vocabulary for the SpecLynx OpenAPI toolkit ecosystem, covering
+  semantic parsing, language server protocol (LSP) features, validation
+  modes, and API specification editing concepts used across SpecLynx products.
+version: '1.0'
+created: '2026-05-02'
+modified: '2026-05-02'
+
+terms:
+  - term: ApiDOM
+    definition: >-
+      SpecLynx's unified semantic parsing engine for API description languages.
+      ApiDOM parses OpenAPI, AsyncAPI, Arazzo, and JSON Schema specifications
+      into a semantic data model with lossless preservation of comments, key
+      ordering, and source maps compatible with Language Server Protocol.
+      Built on Tree-sitter for robust error recovery during live editing.
+    tags:
+      - Parser
+      - Core Technology
+
+  - term: Language Service
+    definition: >-
+      SpecLynx's LSP-compatible npm library (@speclynx/apidom-ls) providing
+      13 intelligent editing capabilities for API description languages including
+      validation, completion, hover documentation, Go to Definition, Find
+      References, semantic tokens, formatting, and format conversion.
+    tags:
+      - LSP
+      - Library
+
+  - term: Semantic Parsing
+    definition: >-
+      Parsing that understands the domain meaning of specification elements,
+      not just their syntactic structure. SpecLynx semantic parsing recognizes
+      OpenAPI Operations, Schema Objects, Server URLs, and similar concepts
+      rather than treating all data as generic JSON/YAML.
+    tags:
+      - Parser
+      - Core Technology
+
+  - term: Lossless Parsing
+    definition: >-
+      A parsing mode that preserves all original document content including
+      YAML comments, key ordering, format styles, and whitespace, with
+      UTF-16 source maps compatible with VS Code and Monaco Editor.
+    tags:
+      - Parser
+      - Core Technology
+
+  - term: Semantic Validation
+    definition: >-
+      A SpecLynx validation mode that detects domain-level issues beyond
+      JSON Schema conformance, such as duplicate operationIds, invalid
+      $ref targets, type mismatches, and unused component definitions.
+    tags:
+      - Validation
+      - Quality
+
+  - term: Semantic Linting
+    definition: >-
+      A SpecLynx validation mode providing custom rules targeting specific
+      OpenAPI element types using JSONPath expressions. Configurable via
+      .speclynx.yaml workspace files or extension settings.
+    tags:
+      - Linting
+      - Quality
+
+  - term: Spectral Integration
+    definition: >-
+      SpecLynx's built-in support for running Spectral rulesets against
+      API specifications. Configured via .spectral.yaml workspace files
+      or the speclynx.spectral.ruleset extension setting.
+    tags:
+      - Linting
+      - Spectral
+
+  - term: Reference Completion
+    definition: >-
+      An autocompletion feature that previews $ref targets with in-context
+      content, showing the referenced schema, parameter, or component
+      inline as the developer types the reference path.
+    tags:
+      - Editing
+      - LSP
+
+  - term: Dereferencing
+    definition: >-
+      The process of expanding all $ref references in a specification document
+      into inline copies of the referenced definitions, producing a fully
+      self-contained specification document. Available as a CLI command and
+      VS Code command palette action.
+    tags:
+      - Tooling
+      - Processing
+
+  - term: Overlay
+    definition: >-
+      A structured modification document applied on top of an existing API
+      specification to add, remove, or replace elements without editing the
+      source. SpecLynx CLI supports OpenAPI Overlay operations.
+    tags:
+      - Tooling
+      - Processing
+
+  - term: Live Preview
+    definition: >-
+      Real-time rendering of API documentation as the specification is edited,
+      using either Scalar (default) or SwaggerUI as the renderer. Supports
+      interactive features including server selection, authorization, and
+      operation testing.
+    tags:
+      - Editing
+      - Documentation
+
+  - term: Isomorphic Architecture
+    definition: >-
+      SpecLynx ApiDOM's design principle ensuring the library works identically
+      in both Node.js and browser environments, enabling the same parsing
+      and editing capabilities in VS Code desktop and browser-based editors.
+    tags:
+      - Architecture
+      - Core Technology
+
+  - term: Error Recovery
+    definition: >-
+      The ability of SpecLynx's Tree-sitter-based parser to handle incomplete
+      or malformed specifications during live editing, enabling validation and
+      autocompletion features to continue working even when the document
+      is temporarily in an invalid state.
+    tags:
+      - Parser
+      - Editing
+
+categories:
+  - name: Core Technology
+    description: Foundational technologies that power SpecLynx products
+    terms:
+      - ApiDOM
+      - Language Service
+      - Semantic Parsing
+      - Lossless Parsing
+      - Isomorphic Architecture
+      - Error Recovery
+
+  - name: Validation and Quality
+    description: Concepts related to specification validation and quality enforcement
+    terms:
+      - Semantic Validation
+      - Semantic Linting
+      - Spectral Integration
+
+  - name: Editing Features
+    description: Editor capabilities provided by SpecLynx products
+    terms:
+      - Reference Completion
+      - Live Preview
+
+  - name: Tooling and Processing
+    description: Processing and transformation capabilities
+    terms:
+      - Dereferencing
+      - Overlay
