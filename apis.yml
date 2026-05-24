@@ -192,6 +192,8 @@ common:
       - name: No Telemetry
       - name: Offline-First
       - name: Multi-Spec Support
+  - type: LLMsTxt
+    url: https://speclynx.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
