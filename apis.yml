@@ -148,6 +148,8 @@ apis:
       ordering, and source maps. Built on Tree-sitter for error recovery during
       editing. Isomorphic — works identically in Node.js and browser environments.
 common:
+  - type: DomainSecurity
+    url: security/speclynx-domain-security.yml
   - url: https://speclynx.com/
     name: Website | SpecLynx
     type: Website
