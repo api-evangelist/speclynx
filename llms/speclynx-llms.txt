@@ -1,0 +1,69 @@
+# SpecLynx
+
+> Enterprise-ready API tooling. Parsers, semantic data models, and intelligent editing tools for OpenAPI, AsyncAPI, Arazzo, Overlay, and JSON Schema.
+
+## Products
+
+### Editor
+- Browser-based OpenAPI editor
+- Fully client-side — no data leaves your browser
+- Real-time validation, autocompletion, and live preview
+- Supports OpenAPI, AsyncAPI, Arazzo, and JSON Schema in JSON and YAML
+- Zero installation, no account required
+- Free, open source (Apache 2.0)
+- Editor: https://editor.speclynx.com
+- GitHub: https://github.com/speclynx/speclynx-editor
+- Docs: https://speclynx.com/editor/
+- Google CodeWiki (AI-generated architecture reference by Google): https://codewiki.google/github.com/speclynx/speclynx-editor
+
+### OpenAPI Toolkit
+- VS Code extension for API specification authoring
+- Real-time validation, autocompletion, hover documentation, syntax highlighting, live preview
+- Supports Swagger 2.0, OpenAPI 3.0.x, OpenAPI 3.1.x, AsyncAPI 2.x, Arazzo 1.x
+- Works with JSON and YAML
+- Free, open source (Apache 2.0)
+- Install: https://marketplace.visualstudio.com/items?itemName=SpecLynx.vscode-openapi-toolkit
+- Docs: https://speclynx.com/openapi-toolkit/
+
+### CLI
+- Command-line tool for managing API specifications
+- Apply Overlay 1.x documents to API definitions
+- Generate an Overlay document by diffing two API specs (overlay diff)
+- Supports any JSON or YAML document as a target
+- Multiple overlay chaining, strict validation, format auto-detection
+- npm package: @speclynx/cli
+- Free, open source (Apache 2.0)
+- GitHub: https://github.com/speclynx/speclynx-cli
+- Docs: https://speclynx.com/cli/
+
+### Language Service
+- LSP-compatible library for API specification intelligence
+- 12+ LSP features: validation, completion, hover, go-to-definition, find references, document symbols, semantic tokens, code actions, formatting
+- npm package: @speclynx/apidom-ls
+- Integrates with any LSP-compatible editor or tool
+- Free, open source (Apache 2.0)
+- Docs: https://speclynx.com/language-service/
+
+### ApiDOM
+- Semantic parser for API specifications
+- Parses OpenAPI, AsyncAPI, Arazzo, Overlay, and JSON Schema into a unified semantic element tree
+- Lossless: preserves comments, key ordering, format styles, and CST source texts
+- Source maps with UTF-16 code units (LSP/VS Code/Monaco compatible)
+- npm packages under @speclynx/apidom-*
+- Free, open source (Apache 2.0)
+- GitHub: https://github.com/speclynx/apidom
+- Docs: https://speclynx.com/apidom/
+- Google CodeWiki (AI-generated architecture reference by Google): https://codewiki.google/github.com/speclynx/apidom
+
+## Blog
+
+- Hands-on tutorials, looks inside how SpecLynx tools are built, and takes on where API tooling is heading
+- Topics: OpenAPI, AsyncAPI, Arazzo, Overlay, JSON Schema
+- Index: https://speclynx.com/blog/
+- RSS feed: https://speclynx.com/feed.xml
+
+## Links
+
+- Website: https://speclynx.com/
+- GitHub: https://github.com/speclynx
+- Contact: info@speclynx.com
