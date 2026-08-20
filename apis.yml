@@ -28,6 +28,14 @@ tags:
   - API Design
   - AsyncAPI
   - Developer Tools
+  - JSON-Schema
+  - OpenAPI
+  - Toolkit
+  - VS Code
+tags_raw:
+  - API Design
+  - AsyncAPI
+  - Developer Tools
   - JSON Schema
   - OpenAPI
   - Toolkit
@@ -42,6 +50,12 @@ apis:
   - aid: speclynx:speclynx
     name: SpecLynx
     tags:
+      - API Design
+      - Developer Tools
+      - OpenAPI
+      - Toolkit
+      - VS Code
+    tags_raw:
       - API Design
       - Developer Tools
       - OpenAPI
@@ -65,6 +79,14 @@ apis:
   - aid: speclynx:openapi-toolkit
     name: SpecLynx OpenAPI Toolkit
     tags:
+      - API Design
+      - AsyncAPI
+      - Developer Tools
+      - Linting
+      - OpenAPI
+      - Spectral
+      - VS Code
+    tags_raw:
       - API Design
       - AsyncAPI
       - Developer Tools
@@ -110,6 +132,12 @@ apis:
   - aid: speclynx:cli
     name: SpecLynx CLI
     tags:
+      - CLI
+      - Developer Tools
+      - JSON-Schema
+      - OpenAPI
+      - Tooling
+    tags_raw:
       - CLI
       - Developer Tools
       - JSON Schema
