@@ -42,7 +42,7 @@ tags:
   - JSON-Schema
   - OpenAPI
   - Toolkit
-  - VS Code
+  - VSCode
 tags_raw:
   - API Design
   - AsyncAPI
@@ -65,7 +65,7 @@ apis:
       - Developer Tools
       - OpenAPI
       - Toolkit
-      - VS Code
+      - VSCode
     tags_raw:
       - API Design
       - Developer Tools
@@ -96,7 +96,7 @@ apis:
       - Linting
       - OpenAPI
       - Spectral
-      - VS Code
+      - VSCode
     tags_raw:
       - API Design
       - AsyncAPI
