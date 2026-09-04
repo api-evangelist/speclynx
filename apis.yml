@@ -53,7 +53,7 @@ tags_raw:
   - VSCode
 created: '2026-01-02'
 modified: '2026-05-02'
-position: Consumer
+position: Consuming
 segments:
   - Developer Tools
   - API Design
