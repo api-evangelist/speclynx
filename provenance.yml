@@ -6,9 +6,6 @@ artifacts:
   examples/speclynx-validation-result-example.json:
     method: unknown
     evidence: no authorship recorded
-  finops/speclynx-finops.yml:
-    method: generated
-    evidence: declared in the artifact
   json-ld/speclynx-context.jsonld:
     method: unknown
     evidence: no authorship recorded
@@ -171,12 +168,6 @@ artifacts:
   llms/speclynx-llms.txt:
     method: searched
     evidence: 'derive-llms-provenance.py: harvested'
-  plans/speclynx-plans-pricing.yml:
-    method: generated
-    evidence: declared in the artifact
-  rate-limits/speclynx-rate-limits.yml:
-    method: generated
-    evidence: declared in the artifact
   rules/speclynx-jsonschema-spectral-rules.yml:
     method: generated
     evidence: declared in the artifact

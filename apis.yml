@@ -8,30 +8,32 @@ description: >-
   of Swagger and OpenAPI development experience, SpecLynx products prioritize
   security (specs never leave your machine), accuracy, and developer productivity.
   Core products include a VS Code extension, browser-based editor, CLI, language
-  service library, and the ApiDOM semantic parsing engine.
+  service library, and the ApiDOM semantic parsing engine. Every SpecLynx product
+  is open source under the Apache-2.0 license; there are no paid plans.
 type: Index
 deliveryModel:
-  model: unknown
-  open_source: unknown
+  model: self-hosted
+  license: Apache-2.0
+  open_source: true
   commercial: false
   callable_host: false
-  label: Delivery model not determined — needs a product licence on record
-  confidence: low
+  label: Self-hosted open source · you run it yourself
+  confidence: high
   source:
-  - repository-unlicensed
-  generated: '2026-08-28'
+  - license
+  generated: '2026-09-17'
   method: derived
 accessModel:
-  pricing: freemium
+  pricing: unknown
   onboarding: unknown
   trial: false
   try_now: false
   public: false
-  label: Freemium
-  confidence: medium
+  label: Unknown
+  confidence: low
   source:
-  - plans
-  generated: '2026-07-22'
+  - security
+  generated: '2026-09-17'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/speclynx.png
 access: 3rd-Party
@@ -199,6 +201,11 @@ apis:
       ordering, and source maps. Built on Tree-sitter for error recovery during
       editing. Isomorphic — works identically in Node.js and browser environments.
 common:
+  - type: GitHubOrganization
+    url: https://github.com/speclynx
+  - type: License
+    name: Apache-2.0
+    url: https://github.com/speclynx/vscode-openapi-toolkit/blob/main/LICENSE
   - type: DomainSecurity
     url: security/speclynx-domain-security.yml
   - url: https://speclynx.com/
