@@ -41,7 +41,7 @@ tags:
   - API Design
   - AsyncAPI
   - Developer Tools
-  - JSON-Schema
+  - JSON Schema
   - OpenAPI
   - Toolkit
   - VS Code
@@ -53,6 +53,7 @@ tags_raw:
   - OpenAPI
   - Toolkit
   - VSCode
+  - JSON-Schema
 created: '2026-01-02'
 modified: '2026-05-02'
 position: Consuming
@@ -147,7 +148,7 @@ apis:
     tags:
       - CLI
       - Developer Tools
-      - JSON-Schema
+      - JSON Schema
       - OpenAPI
       - Tooling
     tags_raw:
@@ -156,6 +157,7 @@ apis:
       - JSON Schema
       - OpenAPI
       - Tooling
+      - JSON-Schema
     humanURL: https://speclynx.com/
     properties:
       - url: https://speclynx.com/
