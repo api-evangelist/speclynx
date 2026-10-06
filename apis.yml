@@ -55,7 +55,7 @@ tags_raw:
   - VSCode
   - JSON-Schema
 created: '2026-01-02'
-modified: '2026-05-02'
+modified: '2026-10-06'
 position: Consuming
 segments:
   - Developer Tools
@@ -203,6 +203,8 @@ apis:
       ordering, and source maps. Built on Tree-sitter for error recovery during
       editing. Isomorphic — works identically in Node.js and browser environments.
 common:
+  - url: https://speclynx.com/feed
+    type: BlogRSS
   - type: GitHubOrganization
     url: https://github.com/speclynx
   - type: License
