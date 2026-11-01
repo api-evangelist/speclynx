@@ -64,78 +64,145 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Enterprise-ready API tooling for authors and maintainers of OpenAPI, AsyncAPI, and Arazzo specifications. Built by veterans with 15+ years of Swagger and OpenAPI development experience, SpecLynx provides semantic editing, real-time validation, and live preview — with an offline-first, zero-telemetry architecture that keeps your specs on your machine.
+SpecLynx provides enterprise-ready API tooling for authors and maintainers of OpenAPI, AsyncAPI, and Arazzo specifications. Built by veterans with 15+ years of Swagger and OpenAPI development experience, SpecLynx products prioritize security (specs never leave your machine), accuracy, and developer productivity. Core products include a VS Code extension, browser-based editor, CLI, language service library, and the ApiDOM semantic parsing engine. Every SpecLynx product is open source under the Apache-2.0 license; there are no paid plans.
 
-**URL:** [https://speclynx.com/](https://speclynx.com/)
+**Areas:** API Design · AsyncAPI · Developer Tools · JSON Schema · OpenAPI · Toolkit · VS Code
 
-## Scope
+## SpecLynx on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for SpecLynx is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/speclynx/](https://apis.io/providers/speclynx/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (6)
 
-API Design, AsyncAPI, Developer Tools, JSON Schema, OpenAPI, Toolkit, VSCode
+- [SpecLynx](https://apis.io/apis/speclynx/speclynx/) — Stop wrestling with OpenAPI specs. SpecLynx OpenAPI Toolkit delivers the most effective way to author and manage your API specs, bringing unprecedented…
+- [SpecLynx OpenAPI Toolkit](https://apis.io/apis/speclynx/openapi-toolkit/) — A VS Code extension providing semantic editing, real-time validation, linting, and live preview for OpenAPI, AsyncAPI, and Arazzo specifications. Features…
+- [SpecLynx Editor](https://apis.io/apis/speclynx/editor/) — A browser-based OpenAPI editor with real-time validation, smart autocompletion, and live preview. No installation required — runs entirely client-side with…
+- [SpecLynx CLI](https://apis.io/apis/speclynx/cli/) — A command-line interface for overlay operations, dereferencing, bundling, format conversion (JSON/YAML), and validation of OpenAPI, AsyncAPI, Arazzo, and…
+- [SpecLynx Language Service](https://apis.io/apis/speclynx/language-service/) — An LSP-compatible npm library (@speclynx/apidom-ls) providing 13 intelligent editing capabilities for API description languages, including validation,…
+- [SpecLynx ApiDOM](https://apis.io/apis/speclynx/apidom/) — A unified semantic parsing engine that underpins all SpecLynx products. ApiDOM parses OpenAPI, AsyncAPI, Arazzo, and JSON Schema specifications into a…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-01-02
-- **Modified:** 2026-05-02
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Products
+#### JSON Schema (2)
 
-| Product | Type | Description |
-|---|---|---|
-| [OpenAPI Toolkit](https://speclynx.com/openapi-toolkit/) | VS Code Extension | Semantic editing, validation, live preview for OpenAPI/AsyncAPI/Arazzo |
-| [SpecLynx Editor](https://speclynx.com/editor/) | Browser Tool | Client-side OpenAPI editor at editor.speclynx.com |
-| [SpecLynx CLI](https://speclynx.com/) | CLI | Overlay operations, dereferencing, bundling, format conversion |
-| [Language Service](https://speclynx.com/language-service/) | npm Library | LSP-compatible library with 13 editing capabilities |
-| [ApiDOM](https://speclynx.com/apidom/) | Parsing Engine | Semantic parser powering all SpecLynx products |
+The data models the API reads and writes.
 
-## Supported Formats
+- [SpecLynx Completion Item](https://apis.io/schemas/speclynx/speclynx-completion-item/)
+- [SpecLynx Validation Result](https://apis.io/schemas/speclynx/speclynx-validation-result/)
 
-| Format | Versions |
-|---|---|
-| OpenAPI | 2.0, 3.0.x, 3.1.x |
-| AsyncAPI | 2.x |
-| Arazzo | 1.x |
-| JSON Schema | Draft 4/5, 6, 7, 2019-09, 2020-12 |
+#### JSON Structure (1)
 
-## Artifacts
+Data models expressed in JSON Structure.
 
-### JSON Schema
+- [Speclynx Product Structure](https://apis.io/json-structure/speclynx/speclynx-product-structure/)
 
-- [speclynx-validation-result-schema.json](json-schema/speclynx-validation-result-schema.json) — Schema for diagnostic results from SpecLynx validation
-- [speclynx-completion-item-schema.json](json-schema/speclynx-completion-item-schema.json) — Schema for autocompletion items from the Language Service
+#### JSON-LD (1)
 
-### JSON Structure
+Linked-data contexts for the provider's vocabulary.
 
-- [speclynx-product-structure.json](json-structure/speclynx-product-structure.json) — Structure of the SpecLynx product ecosystem and component relationships
+- [Speclynx Context](https://apis.io/jsonld/speclynx/speclynx-context/)
 
-### JSON-LD
+#### Vocabulary (1)
 
-- [speclynx-context.jsonld](json-ld/speclynx-context.jsonld) — JSON-LD context mapping SpecLynx vocabulary to linked data semantics
+The provider's domain terms, defined.
 
-### Examples
+- [SpecLynx Vocabulary](https://apis.io/vocabularies/speclynx/speclynx-vocabulary/)
 
-- [speclynx-validation-result-example.json](examples/speclynx-validation-result-example.json) — Example validation results from SpecLynx checking an OpenAPI 3.1 spec
+#### Examples (1)
 
-### Vocabulary
+Example requests and responses.
 
-- [speclynx-vocabulary.yml](vocabulary/speclynx-vocabulary.yml) — Domain vocabulary for SpecLynx concepts including ApiDOM, Language Service, semantic validation, and editing features
+- [Speclynx Validation Result Example](https://apis.io/examples/speclynx/speclynx-validation-result-example/)
 
-## Resources
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [SpecLynx — jsonschema rules](https://apis.io/rules/speclynx/speclynx-jsonschema-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Speclynx Domain Security](https://apis.io/security/speclynx/speclynx-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Speclynx Plans Pricing](https://apis.io/plans/speclynx/speclynx-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Speclynx Rate Limits](https://apis.io/rate-limits/speclynx/speclynx-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Speclynx Finops](https://apis.io/finops/speclynx/speclynx-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://speclynx.com/)
-- [OpenAPI Toolkit Documentation](https://speclynx.com/openapi-toolkit/)
-- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=SpecLynx.vscode-openapi-toolkit)
-- [Open VSX Registry](https://open-vsx.org/extension/SpecLynx/vscode-openapi-toolkit)
-- [GitHub Repository](https://github.com/speclynx/vscode-openapi-toolkit)
-- [Browser Editor](https://editor.speclynx.com/)
-- [Contact](mailto:info@speclynx.com)
+- [Documentation](https://speclynx.com/openapi-toolkit/)
+- [GitHub](https://github.com/speclynx)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 15.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 69.6 |
+| Contract quality | 14.7 |
+| Contract governance | 9.8 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/speclynx/](https://apis.io/providers/speclynx/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SpecLynx: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/speclynx/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
